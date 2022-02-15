@@ -1,0 +1,8 @@
+---
+table:
+  columns:
+    noc_id:
+      primary_key: true
+process:
+  materialization: table
+  mode: drop

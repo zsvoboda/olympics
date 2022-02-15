@@ -1,0 +1,1 @@
+update "olympics_stage"."noc_regions" set "NOC"='SGP' where "NOC" IN ('SIN');

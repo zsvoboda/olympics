@@ -1,0 +1,10 @@
+---
+table:
+  columns:
+    event_id:
+      primary_key: true
+    event_name:
+      index: true
+process:
+  materialization: table
+  mode: drop

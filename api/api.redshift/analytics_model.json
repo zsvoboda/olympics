@@ -1,0 +1,623 @@
+{
+    "analytics": {
+        "analyticalDashboards": [
+            {
+                "content": {
+                    "filterContextRef": {
+                        "identifier": {
+                            "id": "9b282873-56e7-4459-98f6-74f0ab9d0317",
+                            "type": "filterContext"
+                        }
+                    },
+                    "layout": {
+                        "type": "IDashboardLayout",
+                        "sections": [
+                            {
+                                "type": "IDashboardLayoutSection",
+                                "items": [
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 2
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Olympic Games",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "6ae99308-335d-47c2-9ed4-4527ef2f39de",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    },
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 2
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Countries",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "1d0ef38d-3825-40f0-8b11-5fe376b41a9b",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    },
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 2
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Sports",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "45cac29a-42cf-446e-b5e2-9c67f91fd9a6",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    },
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 3
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Athletes",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "2ecce10e-1224-45de-afc3-c86871ca7705",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    },
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 3
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Medals",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "e0ab76c5-34b5-4e00-af08-5cfe8ae2853f",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    }
+                                ],
+                                "header": {
+                                    "title": "Headlines"
+                                }
+                            },
+                            {
+                                "type": "IDashboardLayoutSection",
+                                "items": [
+                                    {
+                                        "type": "IDashboardLayoutItem",
+                                        "size": {
+                                            "xl": {
+                                                "gridWidth": 12,
+                                                "gridHeight": 38
+                                            }
+                                        },
+                                        "widget": {
+                                            "type": "insight",
+                                            "title": "Countries by number of athletes, games, and medals",
+                                            "description": "",
+                                            "ignoreDashboardFilters": [],
+                                            "insight": {
+                                                "identifier": {
+                                                    "id": "ab36cd75-50fc-47d9-b655-79dd12a03591",
+                                                    "type": "visualizationObject"
+                                                }
+                                            },
+                                            "drills": [],
+                                            "properties": {}
+                                        }
+                                    }
+                                ],
+                                "header": {
+                                    "title": "Results"
+                                }
+                            }
+                        ]
+                    },
+                    "version": "2"
+                },
+                "description": "",
+                "id": "4d76092b-83d1-4f4b-bc30-18194b75cf56",
+                "title": "Olympics"
+            }
+        ],
+        "dashboardPlugins": [],
+        "filterContexts": [
+            {
+                "content": {
+                    "filters": [
+                        {
+                            "attributeFilter": {
+                                "displayForm": {
+                                    "identifier": {
+                                        "id": "games_name",
+                                        "type": "label"
+                                    }
+                                },
+                                "negativeSelection": true,
+                                "attributeElements": {
+                                    "uris": []
+                                },
+                                "localIdentifier": "d3666c7879304d8789deb93a29a7da02",
+                                "filterElementsBy": []
+                            }
+                        },
+                        {
+                            "attributeFilter": {
+                                "displayForm": {
+                                    "identifier": {
+                                        "id": "games_season",
+                                        "type": "label"
+                                    }
+                                },
+                                "negativeSelection": true,
+                                "attributeElements": {
+                                    "uris": []
+                                },
+                                "localIdentifier": "ecf91e5eda144078ae0203f4d02e5623",
+                                "filterElementsBy": []
+                            }
+                        },
+                        {
+                            "attributeFilter": {
+                                "displayForm": {
+                                    "identifier": {
+                                        "id": "sport_name",
+                                        "type": "label"
+                                    }
+                                },
+                                "negativeSelection": true,
+                                "attributeElements": {
+                                    "uris": []
+                                },
+                                "localIdentifier": "a32dfcd3286a4dbeb133d3eacaf751f0",
+                                "filterElementsBy": []
+                            }
+                        }
+                    ],
+                    "version": "2"
+                },
+                "description": "",
+                "id": "9b282873-56e7-4459-98f6-74f0ab9d0317",
+                "title": "filterContext"
+            }
+        ],
+        "metrics": [
+            {
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT MAX({fact/competition_athlete_height})"
+                },
+                "description": "",
+                "id": "athlete_height_max",
+                "title": "Athlete Height [MAX]"
+            },
+            {
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT MIN({fact/competition_athlete_height})"
+                },
+                "description": "",
+                "id": "athlete_height_min",
+                "title": "Athlete Height [MIN]"
+            },
+            {
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT MAX({fact/competition_athlete_weight})"
+                },
+                "description": "",
+                "id": "athlete_weight_max",
+                "title": "Athlete Weight [MAX]"
+            },
+            {
+                "content": {
+                    "format": "#,##0",
+                    "maql": "SELECT MIN({fact/competition_athlete_weight})"
+                },
+                "description": "",
+                "id": "athlete_weight_min",
+                "title": "Athlete Weight [MIN]"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT COUNT({label/athlete_id})"
+                },
+                "description": "Number of athletes",
+                "id": "athletes",
+                "title": "# Athletes"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT {metric/medals} WHERE {label/medal_name} IN (\"Bronze\")"
+                },
+                "description": "",
+                "id": "bronze_medals",
+                "title": "# Bronze Medals"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT COUNT({label/noc_id})"
+                },
+                "description": "",
+                "id": "countries",
+                "title": "# Countries"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT COUNT({label/games_id})"
+                },
+                "description": "",
+                "id": "games",
+                "title": "# Games"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT {metric/medals} WHERE {label/medal_name} IN (\"Gold\")"
+                },
+                "description": "",
+                "id": "gold_medals",
+                "title": "# Gold Medals"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT COUNT({label/competition_id}) WHERE {label/medal_name} NOT IN (\"None\")"
+                },
+                "description": "",
+                "id": "medals",
+                "title": "# Medals"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT {metric/medals} WHERE {label/medal_name} IN (\"Silver\")"
+                },
+                "description": "",
+                "id": "silver_medals",
+                "title": "# Silver Medals"
+            },
+            {
+                "content": {
+                    "format": "[>=1000000000000]#,,,,.0 T;\n[>=1000000000]#,,,.0 B;\n[>=1000000]#,,.0 M;\n[>=1000]#,.0 K;\n[>=0]#,##0;\n[<=-1000000000000]-#,,,,.0 T;\n[<=-1000000000]-#,,,.0 B;\n[<=-1000000]-#,,.0 M;\n[<=-1000]-#,.0 K;\n[<0]-#,##0",
+                    "maql": "SELECT COUNT({label/sport_id})"
+                },
+                "description": "Number of sports",
+                "id": "sports",
+                "title": "# Sports"
+            }
+        ],
+        "visualizationObjects": [
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "144c54dd688c4c778c898bec630af0b6",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "countries",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "# Countries"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:headline",
+                    "version": "2"
+                },
+                "description": "KPI Countries",
+                "id": "1d0ef38d-3825-40f0-8b11-5fe376b41a9b",
+                "title": "KPI Countries"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "ee25757a12134229ac6e52e06568306c",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "athletes",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "# Athletes"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:headline",
+                    "version": "2"
+                },
+                "description": "KPI Athletes",
+                "id": "2ecce10e-1224-45de-afc3-c86871ca7705",
+                "title": "KPI Athletes"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "538c6ca02dbf4d90b689a8f0fd7acd18",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "sports",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "# Sports"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:headline",
+                    "version": "2"
+                },
+                "description": "KPI Sports",
+                "id": "45cac29a-42cf-446e-b5e2-9c67f91fd9a6",
+                "title": "KPI Sports"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "e3375bba3f564512af638b91f7b673df",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "games",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "# Games"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:headline",
+                    "version": "2"
+                },
+                "description": "KPI Games",
+                "id": "6ae99308-335d-47c2-9ed4-4527ef2f39de",
+                "title": "KPI Games"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "06a8712d7ec64027ae2f2d927ff10ede",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "games",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "# Games"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "e44e78196ad948c68e3401ed15c60e35",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "athletes",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "# Athletes"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "secondary_measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "daa5ddfa35764154975f95c327a78ab6",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "medals",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "# Medals"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "tertiary_measures"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "attribute": {
+                                        "localIdentifier": "a2936badfa704031827275b0aee83b38",
+                                        "displayForm": {
+                                            "identifier": {
+                                                "id": "noc_name",
+                                                "type": "label"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "view"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:bubble",
+                    "version": "2"
+                },
+                "description": "Number of games and athletes by country",
+                "id": "ab36cd75-50fc-47d9-b655-79dd12a03591",
+                "title": "Number of games and athletes by country"
+            },
+            {
+                "content": {
+                    "buckets": [
+                        {
+                            "items": [
+                                {
+                                    "measure": {
+                                        "localIdentifier": "a9457aa33b38474fa5770e1055b4b879",
+                                        "definition": {
+                                            "measureDefinition": {
+                                                "item": {
+                                                    "identifier": {
+                                                        "id": "medals",
+                                                        "type": "metric"
+                                                    }
+                                                },
+                                                "filters": []
+                                            }
+                                        },
+                                        "title": "# Medals"
+                                    }
+                                }
+                            ],
+                            "localIdentifier": "measures"
+                        }
+                    ],
+                    "filters": [],
+                    "sorts": [],
+                    "properties": {},
+                    "visualizationUrl": "local:headline",
+                    "version": "2"
+                },
+                "description": "KPI Medals",
+                "id": "e0ab76c5-34b5-4e00-af08-5cfe8ae2853f",
+                "title": "KPI Medals"
+            }
+        ]
+    }
+}

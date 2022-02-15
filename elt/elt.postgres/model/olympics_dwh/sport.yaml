@@ -1,0 +1,10 @@
+---
+table:
+  columns:
+    sport_id:
+      primary_key: true
+    sport_name:
+      index: true
+process:
+  materialization: table
+  mode: drop

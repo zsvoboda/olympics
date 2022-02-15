@@ -1,0 +1,16 @@
+---
+table:
+  columns:
+    games_id:
+      primary_key: true
+    ganes_name:
+      index: true
+    games_year:
+      index: true
+    games_season:
+      index: true
+    games_city:
+      index: true
+process:
+  materialization: table
+  mode: drop

@@ -1,0 +1,14 @@
+---
+table:
+  columns:
+    noc_id:
+      primary_key: true
+    noc_code:
+      index: true
+    noc_name:
+      index: true
+    noc_notes:
+      index: true
+process:
+  materialization: table
+  mode: drop

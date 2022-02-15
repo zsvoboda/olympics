@@ -1,0 +1,81 @@
+### Create Redshift connection
+# @name createDataSource
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/dataSources/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+<@ ./db.json
+
+### GET Redshift connection
+# @name getDataSource
+GET {{$processEnv DEMO_ENDPOINT}}/api/entities/dataSources/olympics
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Get Physical Model
+# @name getPhysicalModel
+GET {{$processEnv DEMO_ENDPOINT}}/api/layout/dataSources/covid_cz/physicalModel
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Store Physical Model
+# @name storePhysicalModel
+PUT {{$processEnv DEMO_ENDPOINT}}/api/layout/dataSources/covid_cz/physicalModel
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./pdm.json
+
+### Create workspace
+# @name createWorkspace
+POST {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./workspace.json
+
+### GET workspace
+# @name getWorkspace
+GET {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/olympics
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### DELETE workspace
+# @name deleteWorkspace
+DELETE {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/olympics
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Get semantic model
+# @name getSemanticModel
+GET {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces/olympics/logicalModel/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Publish semantic model
+# @name publishSemanticModel
+PUT {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces/olympics/logicalModel/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./ldm.json
+
+### Get analytics model objects
+# @name getAnalyticsModelObjects
+GET {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces/olympics/analyticsModel/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+### Create analytics model objects
+# @name createAnalyticsModelObjects
+PUT {{$processEnv DEMO_ENDPOINT}}/api/layout/workspaces/olympics/analyticsModel/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}
+
+< ./analytics_model.json
+
+### Get metrics
+# @name getMetrics
+GET {{$processEnv DEMO_ENDPOINT}}/api/entities/workspaces/olympics/metrics/
+Content-Type: application/json
+Authorization: Bearer {{$processEnv DEMO_TOKEN}}

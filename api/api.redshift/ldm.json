@@ -1,0 +1,750 @@
+{
+    "ldm": {
+        "datasets": [
+            {
+                "attributes": [
+                    {
+                        "description": "Athlete id",
+                        "id": "athlete_id",
+                        "labels": [
+                            {
+                                "description": "Athlete id",
+                                "id": "athlete_id",
+                                "primary": true,
+                                "sourceColumn": "athlete_id",
+                                "tags": [
+                                    "Athlete"
+                                ],
+                                "title": "Athlete id"
+                            }
+                        ],
+                        "tags": [
+                            "Athlete"
+                        ],
+                        "title": "Athlete id"
+                    },
+                    {
+                        "description": "Athlete name",
+                        "id": "athlete_name",
+                        "labels": [
+                            {
+                                "description": "Athlete name",
+                                "id": "athlete_name",
+                                "primary": true,
+                                "sourceColumn": "athlete_name",
+                                "tags": [
+                                    "Athlete"
+                                ],
+                                "title": "Athlete name"
+                            }
+                        ],
+                        "tags": [
+                            "Athlete"
+                        ],
+                        "title": "Athlete name"
+                    },
+                    {
+                        "description": "Athlete original id",
+                        "id": "athlete_original_id",
+                        "labels": [
+                            {
+                                "description": "Athlete original id",
+                                "id": "athlete_original_id",
+                                "primary": true,
+                                "sourceColumn": "athlete_original_id",
+                                "tags": [
+                                    "Athlete"
+                                ],
+                                "title": "Athlete original id"
+                            }
+                        ],
+                        "tags": [
+                            "Athlete"
+                        ],
+                        "title": "Athlete original id"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "olympics",
+                    "id": "athlete",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "athlete_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "athlete",
+                "references": [],
+                "tags": [
+                    "Athlete"
+                ],
+                "title": "Athlete"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Competition athlete age",
+                        "id": "competition_athlete_age",
+                        "labels": [
+                            {
+                                "description": "Competition athlete age",
+                                "id": "competition_athlete_age",
+                                "primary": true,
+                                "sourceColumn": "competition_athlete_age",
+                                "tags": [
+                                    "Competition"
+                                ],
+                                "title": "Competition athlete age"
+                            }
+                        ],
+                        "tags": [
+                            "Competition"
+                        ],
+                        "title": "Competition athlete age"
+                    },
+                    {
+                        "description": "Competition athlete sex",
+                        "id": "competition_athlete_sex",
+                        "labels": [
+                            {
+                                "description": "Competition athlete sex",
+                                "id": "competition_athlete_sex",
+                                "primary": true,
+                                "sourceColumn": "competition_athlete_sex",
+                                "tags": [
+                                    "Competition"
+                                ],
+                                "title": "Competition athlete sex"
+                            }
+                        ],
+                        "tags": [
+                            "Competition"
+                        ],
+                        "title": "Competition athlete sex"
+                    },
+                    {
+                        "description": "Competition id",
+                        "id": "competition_id",
+                        "labels": [
+                            {
+                                "description": "Competition id",
+                                "id": "competition_id",
+                                "primary": true,
+                                "sourceColumn": "competition_id",
+                                "tags": [
+                                    "Competition"
+                                ],
+                                "title": "Competition id"
+                            }
+                        ],
+                        "tags": [
+                            "Competition"
+                        ],
+                        "title": "Competition id"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "olympics",
+                    "id": "competition",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [
+                    {
+                        "description": "Competition athlete age fact",
+                        "id": "competition_athlete_age_fact",
+                        "sourceColumn": "competition_athlete_age_fact",
+                        "tags": [
+                            "Competition"
+                        ],
+                        "title": "Competition athlete age fact"
+                    },
+                    {
+                        "description": "Competition athlete height",
+                        "id": "competition_athlete_height",
+                        "sourceColumn": "competition_athlete_height",
+                        "tags": [
+                            "Competition"
+                        ],
+                        "title": "Competition athlete height"
+                    },
+                    {
+                        "description": "Competition athlete weight",
+                        "id": "competition_athlete_weight",
+                        "sourceColumn": "competition_athlete_weight",
+                        "tags": [
+                            "Competition"
+                        ],
+                        "title": "Competition athlete weight"
+                    }
+                ],
+                "grain": [
+                    {
+                        "id": "competition_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "competition",
+                "references": [
+                    {
+                        "identifier": {
+                            "id": "athlete",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "athlete_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "event",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "event_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "games",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "games_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "medal",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "medal_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "noc",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "noc_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "sport",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "sport_id"
+                        ]
+                    },
+                    {
+                        "identifier": {
+                            "id": "team",
+                            "type": "dataset"
+                        },
+                        "multivalue": false,
+                        "sourceColumns": [
+                            "team_id"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "Competition"
+                ],
+                "title": "Competition"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Event id",
+                        "id": "event_id",
+                        "labels": [
+                            {
+                                "description": "Event id",
+                                "id": "event_id",
+                                "primary": true,
+                                "sourceColumn": "event_id",
+                                "tags": [
+                                    "Event"
+                                ],
+                                "title": "Event id"
+                            }
+                        ],
+                        "tags": [
+                            "Event"
+                        ],
+                        "title": "Event id"
+                    },
+                    {
+                        "description": "Event name",
+                        "id": "event_name",
+                        "labels": [
+                            {
+                                "description": "Event name",
+                                "id": "event_name",
+                                "primary": true,
+                                "sourceColumn": "event_name",
+                                "tags": [
+                                    "Event"
+                                ],
+                                "title": "Event name"
+                            }
+                        ],
+                        "tags": [
+                            "Event"
+                        ],
+                        "title": "Event name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "olympics",
+                    "id": "event",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "event_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "event",
+                "references": [],
+                "tags": [
+                    "Event"
+                ],
+                "title": "Event"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Games city",
+                        "id": "games_city",
+                        "labels": [
+                            {
+                                "description": "Games city",
+                                "id": "games_city",
+                                "primary": true,
+                                "sourceColumn": "games_city",
+                                "tags": [
+                                    "Games"
+                                ],
+                                "title": "Games city"
+                            }
+                        ],
+                        "tags": [
+                            "Games"
+                        ],
+                        "title": "Games city"
+                    },
+                    {
+                        "description": "Games id",
+                        "id": "games_id",
+                        "labels": [
+                            {
+                                "description": "Games id",
+                                "id": "games_id",
+                                "primary": true,
+                                "sourceColumn": "games_id",
+                                "tags": [
+                                    "Games"
+                                ],
+                                "title": "Games id"
+                            }
+                        ],
+                        "tags": [
+                            "Games"
+                        ],
+                        "title": "Games id"
+                    },
+                    {
+                        "description": "Games name",
+                        "id": "games_name",
+                        "labels": [
+                            {
+                                "description": "Games name",
+                                "id": "games_name",
+                                "primary": true,
+                                "sourceColumn": "games_name",
+                                "tags": [
+                                    "Games"
+                                ],
+                                "title": "Games name"
+                            }
+                        ],
+                        "tags": [
+                            "Games"
+                        ],
+                        "title": "Games name"
+                    },
+                    {
+                        "description": "Games season",
+                        "id": "games_season",
+                        "labels": [
+                            {
+                                "description": "Games season",
+                                "id": "games_season",
+                                "primary": true,
+                                "sourceColumn": "games_season",
+                                "tags": [
+                                    "Games"
+                                ],
+                                "title": "Games season"
+                            }
+                        ],
+                        "tags": [
+                            "Games"
+                        ],
+                        "title": "Games season"
+                    },
+                    {
+                        "description": "Games year",
+                        "id": "games_year",
+                        "labels": [
+                            {
+                                "description": "Games year",
+                                "id": "games_year",
+                                "primary": true,
+                                "sourceColumn": "games_year",
+                                "tags": [
+                                    "Games"
+                                ],
+                                "title": "Games year"
+                            }
+                        ],
+                        "tags": [
+                            "Games"
+                        ],
+                        "title": "Games year"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "olympics",
+                    "id": "games",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "games_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "games",
+                "references": [],
+                "tags": [
+                    "Games"
+                ],
+                "title": "Games"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Medal id",
+                        "id": "medal_id",
+                        "labels": [
+                            {
+                                "description": "Medal id",
+                                "id": "medal_id",
+                                "primary": true,
+                                "sourceColumn": "medal_id",
+                                "tags": [
+                                    "Medal"
+                                ],
+                                "title": "Medal id"
+                            }
+                        ],
+                        "tags": [
+                            "Medal"
+                        ],
+                        "title": "Medal id"
+                    },
+                    {
+                        "description": "Medal name",
+                        "id": "medal_name",
+                        "labels": [
+                            {
+                                "description": "Medal name",
+                                "id": "medal_name",
+                                "primary": true,
+                                "sourceColumn": "medal_name",
+                                "tags": [
+                                    "Medal"
+                                ],
+                                "title": "Medal name"
+                            }
+                        ],
+                        "tags": [
+                            "Medal"
+                        ],
+                        "title": "Medal name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "olympics",
+                    "id": "medal",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "medal_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "medal",
+                "references": [],
+                "tags": [
+                    "Medal"
+                ],
+                "title": "Medal"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Noc code",
+                        "id": "noc_code",
+                        "labels": [
+                            {
+                                "description": "Noc code",
+                                "id": "noc_code",
+                                "primary": true,
+                                "sourceColumn": "noc_code",
+                                "tags": [
+                                    "Noc"
+                                ],
+                                "title": "Noc code"
+                            }
+                        ],
+                        "tags": [
+                            "Noc"
+                        ],
+                        "title": "Noc code"
+                    },
+                    {
+                        "description": "Noc id",
+                        "id": "noc_id",
+                        "labels": [
+                            {
+                                "description": "Noc id",
+                                "id": "noc_id",
+                                "primary": true,
+                                "sourceColumn": "noc_id",
+                                "tags": [
+                                    "Noc"
+                                ],
+                                "title": "Noc id"
+                            }
+                        ],
+                        "tags": [
+                            "Noc"
+                        ],
+                        "title": "Noc id"
+                    },
+                    {
+                        "description": "Noc name",
+                        "id": "noc_name",
+                        "labels": [
+                            {
+                                "description": "Noc name",
+                                "id": "noc_name",
+                                "primary": true,
+                                "sourceColumn": "noc_name",
+                                "tags": [
+                                    "Noc"
+                                ],
+                                "title": "Noc name"
+                            }
+                        ],
+                        "tags": [
+                            "Noc"
+                        ],
+                        "title": "Noc name"
+                    },
+                    {
+                        "description": "Noc notes",
+                        "id": "noc_notes",
+                        "labels": [
+                            {
+                                "description": "Noc notes",
+                                "id": "noc_notes",
+                                "primary": true,
+                                "sourceColumn": "noc_notes",
+                                "tags": [
+                                    "Noc"
+                                ],
+                                "title": "Noc notes"
+                            }
+                        ],
+                        "tags": [
+                            "Noc"
+                        ],
+                        "title": "Noc notes"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "olympics",
+                    "id": "noc",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "noc_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "noc",
+                "references": [],
+                "tags": [
+                    "Noc"
+                ],
+                "title": "Noc"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Sport id",
+                        "id": "sport_id",
+                        "labels": [
+                            {
+                                "description": "Sport id",
+                                "id": "sport_id",
+                                "primary": true,
+                                "sourceColumn": "sport_id",
+                                "tags": [
+                                    "Sport"
+                                ],
+                                "title": "Sport id"
+                            }
+                        ],
+                        "tags": [
+                            "Sport"
+                        ],
+                        "title": "Sport id"
+                    },
+                    {
+                        "description": "Sport name",
+                        "id": "sport_name",
+                        "labels": [
+                            {
+                                "description": "Sport name",
+                                "id": "sport_name",
+                                "primary": true,
+                                "sourceColumn": "sport_name",
+                                "tags": [
+                                    "Sport"
+                                ],
+                                "title": "Sport name"
+                            }
+                        ],
+                        "tags": [
+                            "Sport"
+                        ],
+                        "title": "Sport name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "olympics",
+                    "id": "sport",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "sport_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "sport",
+                "references": [],
+                "tags": [
+                    "Sport"
+                ],
+                "title": "Sport"
+            },
+            {
+                "attributes": [
+                    {
+                        "description": "Team id",
+                        "id": "team_id",
+                        "labels": [
+                            {
+                                "description": "Team id",
+                                "id": "team_id",
+                                "primary": true,
+                                "sourceColumn": "team_id",
+                                "tags": [
+                                    "Team"
+                                ],
+                                "title": "Team id"
+                            }
+                        ],
+                        "tags": [
+                            "Team"
+                        ],
+                        "title": "Team id"
+                    },
+                    {
+                        "description": "Team name",
+                        "id": "team_name",
+                        "labels": [
+                            {
+                                "description": "Team name",
+                                "id": "team_name",
+                                "primary": true,
+                                "sourceColumn": "team_name",
+                                "tags": [
+                                    "Team"
+                                ],
+                                "title": "Team name"
+                            }
+                        ],
+                        "tags": [
+                            "Team"
+                        ],
+                        "title": "Team name"
+                    }
+                ],
+                "dataSourceTableId": {
+                    "dataSourceId": "olympics",
+                    "id": "team",
+                    "type": "dataSource"
+                },
+                "description": "",
+                "facts": [],
+                "grain": [
+                    {
+                        "id": "team_id",
+                        "type": "attribute"
+                    }
+                ],
+                "id": "team",
+                "references": [],
+                "tags": [
+                    "Team"
+                ],
+                "title": "Team"
+            }
+        ],
+        "dateInstances": []
+    }
+}

@@ -1,0 +1,33 @@
+---
+table:
+  columns:
+    competition_id:
+      primary_key: true
+    athlete_id:
+      foreign_keys:
+        - athlete.athlete_id
+    noc_id:
+      foreign_keys:
+        - noc.noc_id
+    medal_id:
+      foreign_keys:
+        - medal.medal_id
+    sport_id:
+      foreign_keys:
+        - sport.sport_id
+    event_id:
+      foreign_keys:
+        - event.event_id
+    games_id:
+      foreign_keys:
+        - games.games_id
+    team_id:
+      foreign_keys:
+        - team.team_id
+    competition_athlete_sex:
+      index: true
+    competition_athlete_age:
+      index: true
+process:
+  materialization: table
+  mode: drop

@@ -1,0 +1,10 @@
+---
+table:
+  columns:
+    medal_id:
+      primary_key: true
+    medal_name:
+      index: true
+process:
+  materialization: table
+  mode: drop

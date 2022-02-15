@@ -1,0 +1,10 @@
+---
+table:
+  columns:
+    team_id:
+      primary_key: true
+    team_name:
+      index: true
+process:
+  materialization: table
+  mode: drop

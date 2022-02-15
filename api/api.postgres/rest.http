@@ -1,0 +1,87 @@
+### Create Postgres connection
+# @name createDataSource
+POST {{endpoint}}/api/entities/dataSources/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+<@ ./db.json
+
+### GET Postgres connection
+# @name getDataSource
+GET {{endpoint}}/api/entities/dataSources/olympics
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+### Get Physical Model
+# @name getPhysicalModel
+GET {{endpoint}}/api/layout/dataSources/olympics/physicalModel
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Store Physical Model
+# @name storePhysicalModel
+PUT {{endpoint}}/api/layout/dataSources/olympics/physicalModel
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+< ./pdm.json
+
+### Get all workspaces
+# @name getAllWorkspaces
+GET {{endpoint}}/api/layout/workspaces
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Create workspace
+# @name createWorkspace
+POST {{endpoint}}/api/entities/workspaces/
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+< ./workspace.json
+
+### GET workspace
+# @name getWorkspace
+GET {{endpoint}}/api/entities/workspaces/olympics
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+### DELETE workspace
+# @name deleteWorkspace
+DELETE {{endpoint}}/api/entities/workspaces/olympics
+Content-Type: application/vnd.gooddata.api+json
+Authorization: Bearer {{token}}
+
+### Get semantic model
+# @name getSemanticModel
+GET {{endpoint}}/api/layout/workspaces/olympics/logicalModel/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Publish semantic model
+# @name publishSemanticModel
+PUT {{endpoint}}/api/layout/workspaces/olympics/logicalModel/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+< ./ldm.json
+
+### Get analytics model objects
+# @name getAnalyticsModelObjects
+GET {{endpoint}}/api/layout/workspaces/olympics/analyticsModel/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Create analytics model objects
+# @name createAnalyticsModelObjects
+PUT {{endpoint}}/api/layout/workspaces/olympics/analyticsModel/
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+< ./analytics_model.json
+
+### Get metrics
+# @name getMetrics
+GET {{endpoint}}/api/entities/workspaces/olympics/metrics/
+Content-Type: application/json
+Authorization: Bearer {{token}}

@@ -1,0 +1,14 @@
+{
+  "data": {
+    "id": "olympics",
+    "type": "dataSource",
+    "attributes": {
+      "name": "Olympics DB connection",
+      "type": "REDSHIFT",
+      "url": "jdbc:redshift://{{$processEnv REDSHIFT_HOST}}:{{$processEnv REDSHIFT_PORT}}/{{$processEnv REDSHIFT_DB}}",
+      "schema": "olympics_dwh",
+      "username": "{{$processEnv REDSHIFT_USER}}",
+      "password": "{{$processEnv REDSHIFT_PASSWORD}}"
+    }
+  }
+}

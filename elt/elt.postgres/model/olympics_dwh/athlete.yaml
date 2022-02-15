@@ -1,0 +1,12 @@
+---
+table:
+  columns:
+    athlete_id:
+      primary_key: true
+    athlete_original_id:
+      index: true
+    athlete_name:
+      index: true
+process:
+  materialization: table
+  mode: drop

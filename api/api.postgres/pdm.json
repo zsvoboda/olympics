@@ -1,0 +1,265 @@
+{
+    "pdm": {
+        "tables": [
+            {
+                "columns": [
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "athlete_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "athlete_name"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": false,
+                        "name": "athlete_original_id"
+                    }
+                ],
+                "id": "athlete",
+                "path": [
+                    "olympics_dwh",
+                    "athlete"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": false,
+                        "name": "athlete_id",
+                        "referencedTableColumn": "athlete_id",
+                        "referencedTableId": "athlete"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "competition_athlete_age"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "competition_athlete_age_fact"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "competition_athlete_height"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "competition_athlete_sex"
+                    },
+                    {
+                        "dataType": "NUMERIC",
+                        "isPrimaryKey": false,
+                        "name": "competition_athlete_weight"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "competition_id"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": false,
+                        "name": "event_id",
+                        "referencedTableColumn": "event_id",
+                        "referencedTableId": "event"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": false,
+                        "name": "games_id",
+                        "referencedTableColumn": "games_id",
+                        "referencedTableId": "games"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": false,
+                        "name": "medal_id",
+                        "referencedTableColumn": "medal_id",
+                        "referencedTableId": "medal"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": false,
+                        "name": "noc_id",
+                        "referencedTableColumn": "noc_id",
+                        "referencedTableId": "noc"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": false,
+                        "name": "sport_id",
+                        "referencedTableColumn": "sport_id",
+                        "referencedTableId": "sport"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": false,
+                        "name": "team_id",
+                        "referencedTableColumn": "team_id",
+                        "referencedTableId": "team"
+                    }
+                ],
+                "id": "competition",
+                "path": [
+                    "olympics_dwh",
+                    "competition"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "event_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "event_name"
+                    }
+                ],
+                "id": "event",
+                "path": [
+                    "olympics_dwh",
+                    "event"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "games_city"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "games_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "games_name"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "games_season"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "games_year"
+                    }
+                ],
+                "id": "games",
+                "path": [
+                    "olympics_dwh",
+                    "games"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "medal_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "medal_name"
+                    }
+                ],
+                "id": "medal",
+                "path": [
+                    "olympics_dwh",
+                    "medal"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "noc_code"
+                    },
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "noc_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "noc_name"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "noc_notes"
+                    }
+                ],
+                "id": "noc",
+                "path": [
+                    "olympics_dwh",
+                    "noc"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "sport_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "sport_name"
+                    }
+                ],
+                "id": "sport",
+                "path": [
+                    "olympics_dwh",
+                    "sport"
+                ],
+                "type": "TABLE"
+            },
+            {
+                "columns": [
+                    {
+                        "dataType": "INT",
+                        "isPrimaryKey": true,
+                        "name": "team_id"
+                    },
+                    {
+                        "dataType": "STRING",
+                        "isPrimaryKey": false,
+                        "name": "team_name"
+                    }
+                ],
+                "id": "team",
+                "path": [
+                    "olympics_dwh",
+                    "team"
+                ],
+                "type": "TABLE"
+            }
+        ]
+    }
+}

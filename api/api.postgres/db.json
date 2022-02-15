@@ -1,0 +1,14 @@
+{
+    "data": {
+      "id": "olympics",
+      "type": "dataSource",
+      "attributes": {
+        "name": "Olympics",
+        "type": "POSTGRESQL",
+        "url": "jdbc:postgresql://{{ds_host}}/demo",
+        "schema": "olympics_dwh",
+        "username": "{{ds_user}}",
+        "password": "{{ds_pass}}"
+      }
+    }
+  }
