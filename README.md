@@ -90,7 +90,7 @@ Find the `# @name publishSemanticModel` on line 62 and click on the small link `
 
 Find the `# @name createAnalyticsModelObjects` on line 76 and click on the small link `Send Request` between line 76 and 77
 
-12. ENJOY the Olympics analytics at [localhost:3000](http://localhost:3000/)
+15. ENJOY the Olympics analytics at [localhost:3000](http://localhost:3000/)
 
 Username is `demo@example.com`, password `demo123`.
 
