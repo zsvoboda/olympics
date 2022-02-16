@@ -6,6 +6,6 @@ rem Source the environment variables (we need the PYTHON_VIRTUAL_ENV, KAGGLE_USE
 call %DBD_BIN_DIR%\env.bat
 
 rem Create and activate a new virtual environment
-call %DBD_BIN_DIR%\..\%PYTHON_VIRTUAL_ENV%\\Scripts\activate.bat
+call %DBD_BIN_DIR%\..\%PYTHON_VIRTUAL_ENV%\Scripts\activate.bat
 
 set PATH=%DBD_BIN_DIR%\..\%PYTHON_VIRTUAL_ENV%\Scripts;%PATH%"
