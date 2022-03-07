@@ -38,7 +38,7 @@ Answer 'yes' when prompted.
 5. Load the olympics data to the Postgres database that runs in the GoodData.CN container
 
 ```shell
-cd etl 
+cd elt/elt.postgres
 dbd run .
 ```
 
@@ -50,7 +50,7 @@ dbd run .
 
 VSCode should reload.
 
-8. Open the `api/rest.http`
+8. Open the `api/api.postgres/rest.http`
 
 Make sure that your environment is set to `GoodData.CN CE` in the bottom right status bar listbox of the VSCode editor. 
 
